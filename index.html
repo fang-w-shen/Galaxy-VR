@@ -6,7 +6,7 @@
 </head>
 <body>
 
-
+<div></div>
 <script src="./client.bundle.js"></script>
   <script>
   // Initialize the React VR application
@@ -15,8 +15,23 @@
   // your compiled index.bundle.js
   './index.bundle.js',
   // Attach it to the body tag
-  document.body
+  document.body,
+    // third argument is a map of initialization options
+  {
+    cursorVisibility: 'hidden',
+  }
   );
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+<script>
+// $('body').on("click",()=>{
+//   document.getElementsByTagName('canvas')[0].remove()
+//   $('body').off("click")
+
+// })
 </script>
 </body>
 </html>

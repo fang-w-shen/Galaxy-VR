@@ -7,12 +7,21 @@ import {
   View,
   Model,
   Animated,
+  AmbientLight,
+  PointLight
 } from 'react-vr';
+import {
+  Easing
+} from 'react-native';
 const AnimatedModel = Animated.createAnimatedComponent(Model);
 export default class demo extends React.Component {
-  state = {
-    rotation: new Animated.Value(0)
+
+  constructor() {
+    super();
+
+    this.state = {color: 'white',rotation: new Animated.Value(0)};
   }
+
 
   componentDidMount() {
     this.rotate();
@@ -25,28 +34,40 @@ export default class demo extends React.Component {
       {
         toValue: 360,
         duration: 10000,
+        easing: Easing.linear
       }
-    ).start(this.rotate);
+      ).start(this.rotate);
   }
 
   render() {
     return (
       <View>
-        <Pano source={asset('chess-world.jpg')}/>
-        <AnimatedModel
-          source={{
-            obj: asset('untitled.obj')
-          }}
-          style={{
-            color: '#af1e23',
-            transform: [
-              {translate: [0, -3, -12]},
-              {rotateY: this.state.rotation}
-            ]
-          }}
-        />
+      <Pano source={asset('chess-world.jpg')}/>
+      <AmbientLight intensity={0.5} />
+      <PointLight
+      style={{
+        color:'white', transform:[{translate:[0, 0, 0]}]
+      }}
+      />
+      <AnimatedModel
+      id='poop'
+      lit
+      source={{
+        obj: asset('untitled.obj')
+      }}
+      style={{
+        color: this.state.color,
+        transform: [
+        {translate: [0, -3, -40]},
+        {rotateY: this.state.rotation}
+        ]
+      }}
+
+      onEnter={() => this.setState({color: 'red'})}
+      onExit={() => this.setState({color: 'white'})}
+      />
       </View>
-    );
+      );
   }
 };
 
