@@ -12,6 +12,14 @@ export default class demo extends React.Component {
     return (
       <View>
         <Pano source={asset('chess-world.jpg')}/>
+        <Model source={{obj: asset('untitled.obj')}}
+        style={{
+          color: '#af1e23',
+          transform: [
+            {translate: [0, -3, -12]}
+          ]
+        }}
+      />
         <Text
           style={{
             backgroundColor: '#777879',
