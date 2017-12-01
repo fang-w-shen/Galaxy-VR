@@ -5,6 +5,7 @@ import {
   Pano,
   Text,
   View,
+  Model,
 } from 'react-vr';
 
 export default class demo extends React.Component {
