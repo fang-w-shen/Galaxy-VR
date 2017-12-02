@@ -19,7 +19,7 @@ export default class demo extends React.Component {
   constructor() {
     super();
 
-    this.state = {color: 'white',rotation: new Animated.Value(0)};
+    this.state = {color: 'gold',rotation: new Animated.Value(0)};
   }
 
 
@@ -42,7 +42,7 @@ export default class demo extends React.Component {
   render() {
     return (
       <View>
-      <Pano source={asset('chess-world.jpg')}/>
+      <Pano source={asset('room.jpg')}/>
       <AmbientLight intensity={0.5} />
       <PointLight
       style={{
@@ -56,15 +56,53 @@ export default class demo extends React.Component {
         obj: asset('untitled.obj')
       }}
       style={{
-        color: this.state.color,
+        color:this.state.color,
         transform: [
         {translate: [0, -3, -40]},
         {rotateY: this.state.rotation}
         ]
       }}
 
-      onEnter={() => this.setState({color: 'red'})}
-      onExit={() => this.setState({color: 'white'})}
+      onEnter={(e) => {this.setState({color: 'green'})
+
+      console.log(self);
+          // e.target.addEventListener("click",()=>{
+          //   console.log('hi')
+          // })
+        }
+      }
+      onExit={() => this.setState({color: 'gold'})}
+      onClick={() => console.log("hi")}
+      onHover={() => console.log("hi")}
+
+      />
+
+      <AnimatedModel
+      id='poops'
+      lit
+      source={{
+        obj: asset('github.obj')
+      }}
+      style={{
+        color:this.state.color,
+        transform: [
+        {translate: [0, -3, -40]},
+        {rotateY: this.state.rotation}
+        ]
+      }}
+
+      onEnter={(e) => {this.setState({color: 'green'})
+
+      console.log(self);
+          // e.target.addEventListener("click",()=>{
+          //   console.log('hi')
+          // })
+        }
+      }
+      onExit={() => this.setState({color: 'gold'})}
+      onClick={() => console.log("hi")}
+      onHover={() => console.log("hi")}
+
       />
       </View>
       );
