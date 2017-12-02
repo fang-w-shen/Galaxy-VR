@@ -73,7 +73,7 @@ WebVRPolyfill.InstallWebVRSpecShim();
 function init(bundle, parent, options) {
   const vr = new VRInstance(bundle, 'demo', parent, {
     // Add custom options here
-      // cursorVisibility: 'hidden',
+      cursorVisibility: 'visible',
     ...options,
   });
   vr.render = function() {
