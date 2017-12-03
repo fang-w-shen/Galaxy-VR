@@ -10,7 +10,7 @@ import 'webvr-polyfill';
 
 WebVRConfig = {
   // Flag to disabled the UI in VR Mode.
-  CARDBOARD_UI_DISABLED: false, // Default: false
+  CARDBOARD_UI_DISABLED: true, // Default: false
 
   // Forces availability of VR mode, even for non-mobile devices.
   FORCE_ENABLE_VR: true, // Default: false.
@@ -67,14 +67,15 @@ WebVRConfig = {
   // displays, so set a timeout in milliseconds to stop waiting for a response
   // and just use polyfilled displays.
   // https://bugs.chromium.org/p/chromium/issues/detail?id=727969
-  GET_VR_DISPLAYS_TIMEOUT: 5000,
+  GET_VR_DISPLAYS_TIMEOUT: 1000,
 }
 WebVRPolyfill.InstallWebVRSpecShim();
 function init(bundle, parent, options) {
   const vr = new VRInstance(bundle, 'demo', parent, {
-    // Add custom options here
-      cursorVisibility: 'visible',
     ...options,
+
+    cursorVisibility: 'visible',
+
   });
   vr.render = function() {
     // Any custom behavior you want to perform on each frame goes here
