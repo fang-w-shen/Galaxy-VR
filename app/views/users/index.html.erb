@@ -1,0 +1,23 @@
+<% provide(:title, 'All Users') %>
+<h1>All Users</h1>
+
+
+<%= form_tag(users_path, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Find By Name:" %>
+<%= submit_tag "Search", :name => nil, :class => 'btn-success' %>
+
+<% end %>
+
+<hr>
+<div><%= page_entries_info @users %></div>
+<%= will_paginate %>
+
+<ul class="users">
+
+	<%= render @users %>
+
+</ul>
+<% if @users.blank? %>
+<h4>There are no users with the name '<%= params[:search] %>'.</h4>
+<% end %>
+<%= will_paginate %>
