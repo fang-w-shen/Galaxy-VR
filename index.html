@@ -22,34 +22,22 @@
       </div>
     </div>
   </section> -->
-<!--   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="recipient-name" class="form-control-label">Recipient:</label>
-              <input type="text" class="form-control" id="recipient-name">
-            </div>
-            <div class="form-group">
-              <label for="message-text" class="form-control-label">Message:</label>
-              <textarea class="form-control" id="message-text"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Send message</button>
-        </div>
+
+  <div class = "modal_box">
+    <div class="modal_content">
+      <div class="modal_header">
+        Modal Header
+      </div>
+      <div class="modal_body">
+        <div id="modalbody1"></div>
+        <div id="modalbody2">bye</div>
+      </div>
+      <div class="modal_footer">
+        <a href = "#" id="modalclose" class ="close" href="">Kapat</a>
       </div>
     </div>
-  </div> -->
+  </div>
+
   <!-- <a href="login.html"><button>Go To Login</button></a> -->
 
   <!-- Preloader -->
@@ -102,16 +90,70 @@
   },
   {
     "id": 2,
-    "src": "static_assets/nebula.jpg"
+    "src": "static_assets/earth.mtl"
   },
   {
     "id": 3,
-    "src": "static_assets/mercury.obj"
+    "src": "static_assets/nebula.jpg"
   },
   {
     "id": 4,
+    "src": "static_assets/mercury.obj"
+  },
+  {
+    "id": 5,
     "src": "static_assets/mercury.mtl"
+  },
+  {
+    "id": 6,
+    "src": "static_assets/venus.obj"
+  },
+  {
+    "id": 7,
+    "src": "static_assets/venus.mtl"
+  },
+  {
+    "id": 8,
+    "src": "static_assets/saturn.obj"
+  },
+  {
+    "id": 9,
+    "src": "static_assets/saturn.mtl"
+  },
+  {
+    "id": 10,
+    "src": "static_assets/jupiter.obj"
+  },
+  {
+    "id": 11,
+    "src": "static_assets/jupiter.mtl"
+  },
+  {
+    "id": 12,
+    "src": "static_assets/mars.obj"
+  },
+  {
+    "id": 13,
+    "src": "static_assets/mars.mtl"
+  },
+  {
+    "id": 14,
+    "src": "static_assets/uranus.obj"
+  },
+  {
+    "id": 15,
+    "src": "static_assets/uranus.mtl"
+  },
+  {
+    "id": 16,
+    "src": "static_assets/neptune.obj"
+  },
+  {
+    "id": 17,
+    "src": "static_assets/neptune.mtl"
   }])
+
+
   function onProgress(event) {
     var progress = Math.round(event.loaded * 100);
     preloadProgressElem.firstChild.nodeValue = progress + '%';
