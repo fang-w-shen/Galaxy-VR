@@ -1,44 +1,32 @@
 <html>
 <head>
   <title>Galaxy-VR</title>
-  <style>body { margin: 0; }</style>
+  <style>body { margin: 0; overflow: hidden;}</style>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   <link rel="stylesheet" type="text/css" href="./main.css">
-
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico">
   <!-- <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script> -->
 </head>
 <body style=" overflow:hidden;">
-  <!-- <section class="menubar">
-    <div class="container">
-      <div class="btn btn-left">
-
-        <i class="icon-camera"></i>
-      </div>
-      <h1>Galaxy-VR</h1>
-      <div class="btn btn-right">
-        <i class="icon-user"></i>
-        <div class="back"></div>
-      </div>
-    </div>
-  </section> -->
 
   <div class = "modal_box">
-    <div class="modal_content">
-      <div class="modal_header">
+    <div class="modal_content" style="background: rgba(0,0,0,.5);">
+      <div class="modal_header" id="modalheader">
         Modal Header
       </div>
+
       <div class="modal_body">
         <div id="modalbody1"></div>
-        <div id="modalbody2">bye</div>
+        <div id="modalbody2"></div>
       </div>
       <div class="modal_footer">
-        <a href = "#" id="modalclose" class ="close" href="">Kapat</a>
+        <a href = "#" id="modalclose" class ="close" href="">Back</a>
       </div>
     </div>
   </div>
 
-  <!-- <a href="login.html"><button>Go To Login</button></a> -->
+  <!--   <a href="login.html"><button>Go To Login</button></a> -->
 
   <!-- Preloader -->
   <div id="preload" style="
@@ -65,8 +53,7 @@
 <script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
 <script src="./client.bundle.js"></script>
 
 <script>
@@ -188,7 +175,17 @@
 
 
 </script>
+<script type="text/javascript">
+  $('.modal_box').on("click",()=>{
+    $(".modal_box").removeClass('close');
 
+    $(".modal_box").removeClass('active');
+    $(".modal_box").addClass('close');
+  })
+
+
+
+</script>
 </body>
 </html>
 
