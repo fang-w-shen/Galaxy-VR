@@ -1,27 +1,13 @@
-# Ruby on Rails Tutorial demo application
+# [Galaxy-VR](https://galaxy-vr.herokuapp.com/)
 
-## Getting started
 
-To get started with the app, clone the repo and then install the needed gems:
+## Preview
 
-```
-$ bundle install --without production
-```
+[![PREVIEW](https://github.com/fang-w-shen/Galaxy-VR/blob/master/static_assets/previews.png)](https://galaxy-vr.herokuapp.com/)
 
-Next, migrate the database:
 
-```
-$ rails db:migrate
-```
+**[BLAST OFF!](https://galaxy-vr.herokuapp.com/)**
 
-Finally, run the test suite to verify that everything is working correctly:
 
-```
-$ rails test
-```
-
-If the test suite passes, you'll be ready to run the app in a local server:
-
-```
-$ rails server
-```
+## Copyright and License
+Copyright 2017 under [Fang-W-Shen](https://github.com/fang-w-shen).
