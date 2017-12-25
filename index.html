@@ -145,9 +145,13 @@
   }
 
   function onComplete(event) {
+
+
     setTimeout(function(){
+      $('canvas').attr('style','position:fixed !important ;top:0 !important')
 
       setTimeout(function(){
+
         // preloadProgressElem.remove()
         $('#preload-count').attr('style',"position: absolute; left: 50%; top: 47%; color: white; box-sizing: border-box; display: block; width: 150px; z-index: 9; text-align: center; margin-left: -75px; font: 'Lato', cursive; font-size:26px;font-weight:bolder; border: 3px solid white; padding: 10px 20px; background: linear-gradient(45deg, #30777f, rgba(24, 36, 209, .2)); border-radius: 1px; overflow:hidden;")
         $('#preload-count').html("Enter")
@@ -180,12 +184,6 @@
     $(".modal_box").removeClass('active');
     $(".modal_box").addClass('close');
   })
-
-$(document).on('cbox_open',function(){
-  $(document.body).css('overflow','none');
-}).on('cbox_closed',function(){
-  $(document.body).css('position','');
-});
 
 </script>
 </body>
