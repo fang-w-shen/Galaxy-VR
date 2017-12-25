@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>Galaxy-VR</title>
-  <style>body { margin: 0; overflow: hidden;}</style>
+  <style>html { margin: 0; overflow: none !important;}</style>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   <link rel="stylesheet" type="text/css" href="./main.css">
@@ -183,7 +183,11 @@
     $(".modal_box").addClass('close');
   })
 
-
+$(document).on('cbox_open',function(){
+  $(document.body).css('position','fixed');
+}).on('cbox_closed',function(){
+  $(document.body).css('position','');
+});
 
 </script>
 </body>
