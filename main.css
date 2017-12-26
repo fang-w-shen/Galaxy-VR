@@ -74,8 +74,8 @@
   z-index:1;
   transition:all 0.4s linear;
   -webkit-transition:all 0.4s linear;
-  transform:translateX(-10%);
-  -webkit-transform:translateX(-10%);
+  transform:translateX(-20%);
+  -webkit-transform:translateX(-20%);
   opacity: 0;
 
 }
