@@ -12,13 +12,11 @@ export default class Button extends React.Component {
       button: {
         margin: 0.05,
         height: 0.4,
-        backgroundColor: '#31ff00',
-        position:'absolute'
+        backgroundColor: 'rgba(255,255,255,.4)',
       },
       text: {
         fontSize: 0.3,
         textAlign: 'center',
-        position:'absolute'
       },
     });
   }

@@ -25,7 +25,16 @@
       </div>
     </div>
   </div>
+<!--   <div class="slider">
 
+    <h3>Toggle View</h3>
+
+    <div class="flex">
+      <a id="switch_on" class="selected">TOP</a>
+      <a id="switch_off" class="not_selected">FRONT</a>
+    </div>
+
+  </div> -->
   <!--   <a href="login.html"><button>Go To Login</button></a> -->
 
   <!-- Preloader -->
@@ -45,8 +54,7 @@
 </div>
 <!-- / Preloader -->
 <!-- Initializing -->
-<div id="initializing">
-</div>
+
 
 <!-- / Initializing -->
 <script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
@@ -149,7 +157,7 @@
 
 
     setTimeout(function(){
-      // $('canvas').parent().attr('style','position:fixed !important ;top:0 !important')
+      // $('canvas').parent().attr('style','position:fixed !important ;"top:0 !important')
 
       setTimeout(function(){
 
@@ -185,7 +193,23 @@
     $(".modal_box").removeClass('active');
     $(".modal_box").addClass('close');
   })
+  var on_switch = "selected";
+  var off_switch = "not_selected";
 
+  function swap() {
+    var temp = on_switch;
+    on_switch = off_switch;
+    off_switch = temp;
+    $("#switch_on").attr('class', on_switch);
+    $("#switch_off").attr('class', off_switch);
+
+  }
+
+  $(document).ready(function() {
+    $("a").click(function() {
+      swap();
+    });
+  });
 </script>
 </body>
 </html>

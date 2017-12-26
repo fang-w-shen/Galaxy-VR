@@ -1,7 +1,7 @@
 # Blender MTL File: 'None'
-# Material Count: 1
+# Material Count: 2
 
-newmtl 02___Default.001
+newmtl 02___Default.000
 Ns 9.803922
 Ka 0.588200 0.588200 0.588200
 Kd 0.588200 0.588200 0.588200
@@ -13,3 +13,11 @@ illum 2
 map_Kd neptune.jpg
 map_Ka neptune.jpg
 map_d neptune.jpg
+
+newmtl None
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2

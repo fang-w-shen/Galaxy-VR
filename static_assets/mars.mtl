@@ -1,7 +1,7 @@
 # Blender MTL File: 'None'
-# Material Count: 1
+# Material Count: 2
 
-newmtl Material.003
+newmtl Material.001
 Ns 47.058824
 Ka 0.000000 0.000000 0.000000
 Kd 0.640000 0.640000 0.640000
@@ -14,3 +14,10 @@ map_Kd MarsMap_2500x1250.jpg
 map_Ka MarsMap_2500x1250.jpg
 map_d MarsMap_2500x1250.jpg
 
+newmtl None
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
