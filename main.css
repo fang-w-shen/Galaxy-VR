@@ -92,8 +92,8 @@
   border-radius:4px;
   position: relative;
   z-index:1;
-  transition:all 1.9s linear;
-  -webkit-transition:all 1.9s linear;
+  transition:all .4s linear;
+  -webkit-transition:all .4s linear;
   transform:translateY(-20%);
   -webkit-transform:translateY(-20%);
   opacity: 0;
@@ -148,8 +148,8 @@
 }
 
 .close {
-  transition:all 0.4s linear;
-  -webkit-transition:all 0.4s linear;
+/*  transition:all 0.4s linear;
+  -webkit-transition:all 0.4s linear;*/
   opacity: 0;
 }
 
