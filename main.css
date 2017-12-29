@@ -247,12 +247,12 @@ h3:after {
     display:none;
   }
   .modal_content1 {
-    margin-top: -10px;
+    margin-top: -20px;
   }
   #gif {
     position: absolute;
     left: -100px;
-    width: 100vw !important;
+    width: 102vw !important;
     height: 100vh !important;
   }
 }
