@@ -247,7 +247,7 @@ h3:after {
     display:none;
   }
   .modal_content1 {
-    margin-top: 0px;
+    margin-top: -10px;
   }
   #gif {
     position: absolute;
