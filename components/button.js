@@ -4,31 +4,57 @@ import {
   Text,
   VrButton,
 } from 'react-vr';
-
+var interval;
 export default class Button extends React.Component {
   constructor() {
     super();
+    this.state = {
+      color: 'rgba(255,255,255,.1)',
+    }
     this.styles = StyleSheet.create({
       button: {
         margin: 0.05,
         height: 0.4,
-        backgroundColor: 'rgba(255,255,255,.4)',
+        backgroundColor: this.state.color,
+        width: .9,
+        border: 1,
       },
       text: {
         fontSize: 0.3,
         textAlign: 'center',
       },
     });
+
+    this.interval = function(e) {
+      interval = setInterval(()=>{
+        e();
+      },100)
+    }
   }
 
   render() {
     return (
-      <VrButton style={this.styles.button}
-        onClick={() => this.props.callback()}>
-        <Text style={this.styles.text}>
-          {this.props.text}
-        </Text>
+      <VrButton style={{
+        margin: 0.05,
+        height: 0.4,
+        width: .9,
+        border: 1,
+        backgroundColor: this.state.color
+      }}
+      onClick={()=>{this.props.callback()}}
+      onButtonPress={() => {
+        this.interval(this.props.callback)
+      }}
+      onButtonRelease={() => {
+        clearInterval(interval)
+      }}
+      onEnter={() => this.setState({color: 'rgba(255,255,255,.6)'})}
+      onExit={() => this.setState({color: 'rgba(255,255,255,.1)'})}>
+
+      <Text style={this.styles.text}>
+      {this.props.text}
+      </Text>
       </VrButton>
-    );
+      );
   }
 }

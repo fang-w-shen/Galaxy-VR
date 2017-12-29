@@ -92,8 +92,8 @@
   border-radius:4px;
   position: relative;
   z-index:1;
-  transition:all .4s linear;
-  -webkit-transition:all .4s linear;
+  transition:all .8s linear;
+  -webkit-transition:all .8s linear;
   transform:translateY(-20%);
   -webkit-transform:translateY(-20%);
   opacity: 0;
@@ -251,8 +251,8 @@ h3:after {
   }
   #gif {
     position: absolute;
-    left: -100px;
-    width: 102vw !important;
+    left: -120px;
+    width: 110vw !important;
     height: 100vh !important;
   }
 }
