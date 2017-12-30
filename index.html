@@ -172,7 +172,11 @@
 
   function onComplete(event) {
 
-
+    if ($(window).width() > 600 && $(window).width() < 900) {
+      setTimeout(()=>{
+        $('#preload').css('background-image',"URL('./static_assets/static_background.png')")
+      },4000)
+    }
     setTimeout(function(){
       // $('canvas').parent().attr('style','position:fixed !important ;"top:0 !important')
 
