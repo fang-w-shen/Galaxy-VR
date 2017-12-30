@@ -295,16 +295,11 @@ h3:after {
 .main-background {
   min-width:100%;
   min-height:100%;
-  width: 114vw;
+  width: 100vw;
   height:100vh;
   margin:0;
   padding:0;
   border:0;
-  margin-left:-88px;
-  -ms-transform: rotateY(5deg); /* IE 9 */
-  -webkit-transform: rotateY(5deg); /* Safari 3-8 */
-  transform: rotateY(5deg);
-  overflow:none;
 }
 .main-background {
 
@@ -324,7 +319,7 @@ h3:after {
 }
 a[title='Full Screen'] + div {
   position: absolute;
-  z-index: 99;
+  z-index: 9;
   left:49vw;
   top: 90vh !important;
 }
