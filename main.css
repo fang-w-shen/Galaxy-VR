@@ -260,7 +260,7 @@ h3:after {
     width:102vw;
   }
   .modal_content1 {
-    margin-top: -1px;
+    margin-top: -30px;
   }
   .main-background > .img-size {
     display: block;
@@ -275,6 +275,7 @@ h3:after {
   }
   a[title='Full Screen'] + div {
     left:43vw !important;
+    top:85vh !important;
   }
 }
 @media (max-width: 668px) and (orientation: landscape){
@@ -283,10 +284,14 @@ h3:after {
     top: 39px !important;
   }
   .main-background {
-    margin-left:-34px !important;
+    width: 111vw !important;
+    margin-left: -19px !important;
   }
   .modal_content1 {
     margin-top: -40px;
+  }
+  a[title='Full Screen'] + div {
+    left:47vw !important;
   }
 }
 /*END MEDIA M QUERIES*/
