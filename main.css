@@ -261,6 +261,13 @@ h3:after {
   #preload {
     background:black !important;
   }
+  .main-background > .img-size {
+    display: block;
+    margin-left: -29px !important;
+    width: 116% !important;
+    height: 100vh !important;
+
+  }
 }
 @media (max-width: 668px) and (orientation: landscape){
   #gif {
@@ -272,27 +279,27 @@ h3:after {
 
 
 .main-background {
-    min-width:100%;
-    min-height:100%;
-    width: 100vw;
-    height:100vh;
-    margin:0;
-    padding:0;
-    border:0;
+  min-width:100%;
+  min-height:100%;
+  width: 100vw;
+  height:100vh;
+  margin:0;
+  padding:0;
+  border:0;
 }
 .main-background {
 
-    background-repeat:no-repeat;
-    background-position:center top;
-    background-attachment:fixed;
-    background-size:cover;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center top;
+  background-attachment:fixed;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
 }
 
 .img-size {
-    display:block;
-    width:100%;
-    height:auto;
+  display:block;
+  width:100%;
+  height:auto;
 }
