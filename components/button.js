@@ -9,6 +9,7 @@ export default class Button extends React.Component {
   constructor() {
     super();
     this.state = {
+      truth: true,
       color: 'rgba(255,255,255,.1)',
     }
     this.styles = StyleSheet.create({
@@ -29,6 +30,8 @@ export default class Button extends React.Component {
       interval = setInterval(()=>{
         e();
       },100)
+      this.state.truth = false;
+
     }
   }
 
@@ -43,10 +46,14 @@ export default class Button extends React.Component {
       }}
       onClick={()=>{this.props.callback()}}
       onButtonPress={() => {
-        this.interval(this.props.callback)
+        if (this.state.truth) {
+          this.interval(this.props.callback)
+        }
       }}
       onButtonRelease={() => {
         clearInterval(interval)
+        this.state.truth = true;
+
       }}
       onEnter={() => this.setState({color: 'rgba(255,255,255,.6)'})}
       onExit={() => this.setState({color: 'rgba(255,255,255,.1)'})}>
