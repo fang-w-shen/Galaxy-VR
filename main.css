@@ -246,9 +246,6 @@ h3:after {
   .modal_box2, .modal_footer, .modal_body {
     display:none;
   }
-  .modal_content1 {
-    margin-top: -40px;
-  }
   #gif {
     position: absolute;
     left: -120px;
@@ -262,6 +259,9 @@ h3:after {
     background:black !important;
     width:102vw;
   }
+  .modal_content1 {
+    margin-top: -1px;
+  }
   .main-background > .img-size {
     display: block;
     margin-left: -23px !important;
@@ -269,11 +269,24 @@ h3:after {
     height: 100vh !important;
 
   }
+  .main-background {
+    width: 134vw !important;
+    margin-left:-76px !important;
+  }
+  a[title='Full Screen'] + div {
+    left:43vw !important;
+  }
 }
 @media (max-width: 668px) and (orientation: landscape){
   #gif {
     left: -200px !important;
     top: 39px !important;
+  }
+  .main-background {
+    margin-left:-34px !important;
+  }
+  .modal_content1 {
+    margin-top: -40px;
   }
 }
 /*END MEDIA M QUERIES*/
@@ -282,11 +295,16 @@ h3:after {
 .main-background {
   min-width:100%;
   min-height:100%;
-  width: 100vw;
+  width: 114vw;
   height:100vh;
   margin:0;
   padding:0;
   border:0;
+  margin-left:-88px;
+  -ms-transform: rotateY(5deg); /* IE 9 */
+  -webkit-transform: rotateY(5deg); /* Safari 3-8 */
+  transform: rotateY(5deg);
+  overflow:hidden;
 }
 .main-background {
 
@@ -303,4 +321,10 @@ h3:after {
   display:block;
   width:100%;
   height:auto;
+}
+a[title='Full Screen'] + div {
+  position: absolute;
+  z-index: 9;
+  left:47vw;
+  top: 90vh !important;
 }
