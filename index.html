@@ -25,7 +25,7 @@
       </div>
     </div>
   </div>
-  <div class = "modal_box modal_box1">
+  <div class = "modal_box modal_box1" style="z-index:99">
     <div class="modal_content modal_content1" style="background: rgba(0,0,0,.5);color:white;">
 
       <video width="500px" height="500px" src type="video/mp4" id="gif" loop autoplay preload style="opacity:.78">
@@ -41,17 +41,12 @@
       </div>
     </div>
   </div>
-<!--   <div class="slider">
+  <div class="main-background" style="position:absolute;pointer-events: none;z-index:1">
 
-    <h3>Toggle View</h3>
+        <img class="img-size" src="./static_assets/test.png" />
 
-    <div class="flex">
-      <a id="switch_on" class="selected">TOP</a>
-      <a id="switch_off" class="not_selected">FRONT</a>
-    </div>
 
-  </div> -->
-  <!--   <a href="login.html"><button>Go To Login</button></a> -->
+</div>
 
   <!-- Preloader -->
   <div id="preload" style="
@@ -174,11 +169,9 @@
 
     if ($(window).width() > 600 && $(window).width() < 900) {
       setTimeout(()=>{
-        $('#preload').addClass('close')
-        $(preloadElem).css('position','absolute');
+        $('#preload').css('background','black !important');
 
-        $(preloadElem).css('opacity','.5');
-      },14500)
+      },14300)
     }
     setTimeout(function(){
       // $('canvas').parent().attr('style','position:fixed !important ;"top:0 !important')
@@ -225,7 +218,7 @@
   if ($(window).width() > 900) {
     setTimeout(()=>{
       $('#preload').css('background-image',"URL('./static_assets/static_background.png')")
-    },14500)
+    },14300)
   }
 
   var on_switch = "selected";

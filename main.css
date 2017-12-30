@@ -269,3 +269,30 @@ h3:after {
   }
 }
 /*END MEDIA M QUERIES*/
+
+
+.main-background {
+    min-width:100%;
+    min-height:100%;
+    width: 100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+    border:0;
+}
+.main-background {
+
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-attachment:fixed;
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+
+.img-size {
+    display:block;
+    width:100%;
+    height:auto;
+}
