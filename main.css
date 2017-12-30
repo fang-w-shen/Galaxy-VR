@@ -259,8 +259,7 @@ h3:after {
 }
 @media (max-width: 376px) {
   #preload {
-    background-size: 70em;
-    background-position-x: -400px;
+    background:black !important;
   }
 }
 @media (max-width: 668px) and (orientation: landscape){
