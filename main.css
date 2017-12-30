@@ -260,10 +260,11 @@ h3:after {
 @media (max-width: 376px) {
   #preload {
     background:black !important;
+    width:102vw;
   }
   .main-background > .img-size {
     display: block;
-    margin-left: -29px !important;
+    margin-left: -23px !important;
     width: 116% !important;
     height: 100vh !important;
 
