@@ -28,9 +28,9 @@
   <div class = "modal_box modal_box1">
     <div class="modal_content modal_content1" style="background: rgba(0,0,0,.5);color:white;">
 
-        <video width="500px" height="500px" src type="video/mp4" id="gif" loop autoplay style="opacity:.8">
+        <img width="500px" height="500px" src type="image/webp" id="gif" loop autoplay style="opacity:.8">
 
-          </video>
+
 
         <div class="modal_body">
           <div id="modalbody3"></div>
@@ -184,7 +184,12 @@
         var initElem = document.getElementById('preload-count');
 
         initElem.addEventListener("click",()=>{
-          preloadElem.remove()
+          $(preloadElem).addClass('close');
+          $(preloadElem).css('position','absolute');
+          setTimeout(()=>{
+          $(preloadElem).css('z-index','-999');
+
+          },500)
 
           initElem.remove();
         })
@@ -210,6 +215,10 @@
     $(".modal_box").removeClass('active');
     $(".modal_box").addClass('close');
   })
+
+  setTimeout(()=>{
+    $('#preload').css('background-image',"URL('./static_assets/static_background.png')")
+  },14500)
   var on_switch = "selected";
   var off_switch = "not_selected";
 
