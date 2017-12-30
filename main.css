@@ -242,7 +242,7 @@ h3:after {
 
 /*START MEDIA QUERIES*/
 
-@media (max-width: 600px) {
+@media (max-width: 668px) {
   .modal_box2, .modal_footer, .modal_body {
     display:none;
   }
@@ -254,6 +254,13 @@ h3:after {
     left: -120px;
     width: 110vw !important;
     height: 100vh !important;
+  }
+}
+
+@media (max-width: 668px) and (orientation: landscape){
+  #gif {
+    left: -200px !important;
+    top: 39px !important;
   }
 }
 /*END MEDIA M QUERIES*/
