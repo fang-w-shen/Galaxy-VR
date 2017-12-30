@@ -41,7 +41,7 @@
       </div>
     </div>
   </div>
-  <div class="main-background" style="position:absolute;pointer-events: none;z-index:1">
+  <div class="main-background" style="position:absolute;pointer-events: none;z-index:9;opacity:0">
 
         <img class="img-size" src="./static_assets/test.png" />
 
@@ -167,12 +167,7 @@
 
   function onComplete(event) {
 
-    if ($(window).width() > 600 && $(window).width() < 900) {
-      setTimeout(()=>{
-        $('#preload').css('background','black !important');
 
-      },14300)
-    }
     setTimeout(function(){
       // $('canvas').parent().attr('style','position:fixed !important ;"top:0 !important')
 
@@ -184,6 +179,7 @@
         var initElem = document.getElementById('preload-count');
 
         initElem.addEventListener("click",()=>{
+          $('.main-background').css('opacity',1);
           $(preloadElem).addClass('close');
           $(preloadElem).css('position','absolute');
           setTimeout(()=>{
