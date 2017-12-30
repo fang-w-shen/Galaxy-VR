@@ -304,7 +304,7 @@ h3:after {
   -ms-transform: rotateY(5deg); /* IE 9 */
   -webkit-transform: rotateY(5deg); /* Safari 3-8 */
   transform: rotateY(5deg);
-  overflow:hidden;
+  overflow:none;
 }
 .main-background {
 
@@ -324,7 +324,7 @@ h3:after {
 }
 a[title='Full Screen'] + div {
   position: absolute;
-  z-index: 9;
-  left:47vw;
+  z-index: 99;
+  left:49vw;
   top: 90vh !important;
 }
