@@ -215,7 +215,7 @@
     $(".modal_box").removeClass('active');
     $(".modal_box").addClass('close');
   })
-  if ($(window).width() < 960) {
+  if ($(window).width() > 760) {
     setTimeout(()=>{
       $('#preload').css('background-image',"URL('./static_assets/static_background.png')")
     },14500)
