@@ -174,7 +174,10 @@
 
     if ($(window).width() > 600 && $(window).width() < 900) {
       setTimeout(()=>{
-        $('#preload').css('background-image',"URL('./static_assets/static_background.png')")
+        $('#preload').addClass('close')
+        $(preloadElem).css('position','absolute');
+
+        $(preloadElem).css('opacity','.5');
       },14500)
     }
     setTimeout(function(){
