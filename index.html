@@ -28,8 +28,8 @@
   <div class = "modal_box modal_box1">
     <div class="modal_content modal_content1" style="background: rgba(0,0,0,.5);color:white;">
 
-      <img width="500px" height="500px" src type="video/mp4" id="gif" loop autoplay style="opacity:.8">
-
+      <video width="500px" height="500px" src type="video/mp4" id="gif" loop autoplay style="opacity:.8">
+      </video>
 
 
       <div class="modal_body">
@@ -215,7 +215,7 @@
     $(".modal_box").removeClass('active');
     $(".modal_box").addClass('close');
   })
-  if ($(window).width() > 760) {
+  if ($(window).width() > 400) {
     setTimeout(()=>{
       $('#preload').css('background-image',"URL('./static_assets/static_background.png')")
     },14500)
