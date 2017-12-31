@@ -272,8 +272,10 @@ h3:after {
   .main-background {
     width: 134vw !important;
     margin-left:-76px !important;
+    margin-top:-20px;
   }
   a[title='Full Screen'] + div {
+    z-index: 9;
     left:43vw !important;
     top:85vh !important;
   }
@@ -299,6 +301,12 @@ h3:after {
   .main-background {
     width:105vw;
     margin-top: -66px !important;
+  }
+  a[title='Full Screen'] + div {
+    position: absolute;
+    z-index: 9;
+    left:47vw;
+    top: 90vh !important;
   }
 }
 /*END MEDIA M QUERIES*/
@@ -353,9 +361,4 @@ h3:after {
   width:100%;
   height:auto;
 }
-a[title='Full Screen'] + div {
-  position: absolute;
-  z-index: 9;
-  left:47vw;
-  top: 90vh !important;
-}
+
