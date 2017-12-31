@@ -294,6 +294,13 @@ h3:after {
     left:47vw !important;
   }
 }
+
+@media (min-width: 808px) {
+  .main-background {
+    width:105vw;
+    margin-top: -66px !important;
+  }
+}
 /*END MEDIA M QUERIES*/
 
 
@@ -305,6 +312,30 @@ h3:after {
   margin:0;
   padding:0;
   border:0;
+  margin-left: 0;
+  margin-top: 0;
+  transform: rotateZ(0deg);
+  animation: tilt 18s infinite;
+
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotateZ(0deg);
+
+  }
+  25% {
+    transform: rotateZ(1deg);
+
+  }
+  65% {
+    transform: rotateZ(-1deg);
+
+  }
+  100% {
+    transform: rotateZ(0deg);
+
+  }
 }
 .main-background {
 
@@ -325,6 +356,6 @@ h3:after {
 a[title='Full Screen'] + div {
   position: absolute;
   z-index: 9;
-  left:49vw;
+  left:47vw;
   top: 90vh !important;
 }

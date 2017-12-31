@@ -212,7 +212,11 @@
     $(".modal_box").addClass('close');
   })
 
-
+if ($(window).width > '800px') {
+  setTimeout(()=>{
+    $('#preload').css('background-image','URL(./static_assets/static_background.png)')
+  },14000)
+}
 </script>
 </body>
 </html>
