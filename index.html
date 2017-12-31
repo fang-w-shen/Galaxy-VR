@@ -168,7 +168,15 @@
 
   function onComplete(event) {
 
+  // Initialize the React VR application
+  ReactVR.init(
+    'index.bundle.js?platform=vr&dev=false',
+    document.body,
+    {
+      cursorVisibility: 'visible',
+    },
 
+    );
     setTimeout(function(){
       // $('canvas').parent().attr('style','position:fixed !important ;"top:0 !important')
 
@@ -192,15 +200,7 @@
         })
       }, 1000);
     }, 1000);
-  // Initialize the React VR application
-  ReactVR.init(
-    'index.bundle.js?platform=vr&dev=false',
-    document.body,
-    {
-      cursorVisibility: 'visible',
-    },
 
-    );
 }
 
 
