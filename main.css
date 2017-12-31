@@ -301,8 +301,9 @@ h3:after {
 
 @media (min-width: 808px) {
   .main-background {
-    width:105vw;
-    margin-top: -66px !important;
+    width: 108vw !important;
+    margin-left: -59px !important;
+    margin-top: 20px !important;
   }
   a[title='Full Screen'] + div {
     position: absolute;
