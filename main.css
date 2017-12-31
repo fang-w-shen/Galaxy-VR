@@ -277,7 +277,7 @@ h3:after {
   a[title='Full Screen'] + div {
     z-index: 9;
     left:43vw !important;
-    top:85vh !important;
+    top:84vh !important;
   }
 }
 @media (max-width: 668px) and (orientation: landscape){
@@ -293,7 +293,7 @@ h3:after {
     margin-top: -40px;
   }
   a[title='Full Screen'] + div {
-    left:47vw !important;
+    left:47.3vw !important;
     top: 88vh !important;
     z-index: 9;
   }
