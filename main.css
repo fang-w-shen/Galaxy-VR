@@ -242,19 +242,19 @@ h3:after {
 
 /*START MEDIA QUERIES*/
 
-@media (max-width: 668px) {
+@media (max-width: 812px) {
   .modal_box2, .modal_footer, .modal_body {
     display:none;
   }
   #gif {
     position: absolute;
-    left: -120px;
+    left: -17vh;
     width: 110vw !important;
     height: 100vh !important;
   }
 
 }
-@media (max-width: 376px) {
+@media (min-width: 320px) {
   #preload {
     background:black !important;
     width:102vw;
@@ -266,7 +266,7 @@ h3:after {
     display: block;
     margin-left: -23px !important;
     width: 116% !important;
-    height: 100vh !important;
+    height: 102vh !important;
 
   }
   .main-background {
@@ -280,14 +280,17 @@ h3:after {
     top:84vh !important;
   }
 }
-@media (max-width: 668px) and (orientation: landscape){
+@media (min-width: 640px) and (orientation: landscape){
   #gif {
-    left: -200px !important;
+    left: -56vh !important;
     top: 39px !important;
   }
   .main-background {
     width: 111vw !important;
-    margin-left: -19px !important;
+    margin-left: -53px !important;
+  }
+  .img-size {
+    height:102vh !important;
   }
   .modal_content1 {
     margin-top: -40px;
