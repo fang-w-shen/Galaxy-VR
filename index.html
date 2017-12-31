@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="preload" as="image" href="./static_assets/background.webp" media="(min-width: 600px)">
   <link rel="preload" as="image" href="./static_assets/static_background.png" media="(min-width: 600px)">
+  <link rel="preload" as="image" href="./static_assets/nebula.jpg">
   <link rel="stylesheet" type="text/css" href="./main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./rockets.ico">
   <!-- <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script> -->
@@ -44,10 +45,10 @@
   </div>
   <div class="main-background" style="position:absolute;pointer-events: none;z-index:8;opacity:0;">
 
-        <img class="img-size" src="./static_assets/test.png" />
+    <img class="img-size" src="./static_assets/test.png" />
 
 
-</div>
+  </div>
 
   <!-- Preloader -->
   <div id="preload" style="
@@ -177,7 +178,7 @@
     },
 
     );
-    setTimeout(function(){
+  setTimeout(function(){
       // $('canvas').parent().attr('style','position:fixed !important ;"top:0 !important')
 
       setTimeout(function(){
@@ -213,11 +214,11 @@
     $(".modal_box").addClass('close');
   })
 
-if ($(window).width() > 800) {
-  setTimeout(()=>{
-    $('#preload').css('background-image','URL(./static_assets/static_background.png)')
-  },14000)
-}
+  if ($(window).width() > 600) {
+    setTimeout(()=>{
+      $('#preload').css('background-image','URL(./static_assets/static_background.png)')
+    },14000)
+  }
 </script>
 </body>
 </html>
