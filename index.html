@@ -78,6 +78,11 @@
 
 <script>
 
+  if ($(window).width() > 800) {
+    setTimeout(()=>{
+      $('#preload').css('background-image','URL(./static_assets/static_background.png)')
+    },14000)
+  }
   /* Preload */
   var queue = new createjs.LoadQueue();
 
@@ -97,7 +102,7 @@
   },
   {
     "id": 3,
-    "src": "static_assets/2k_sun.jpg"
+    "src": "static_assets/nebula.jpg"
   },
   {
     "id": 4,
@@ -187,11 +192,6 @@
     $(".modal_box").addClass('close');
   })
 
-  if ($(window).width() > 800) {
-    setTimeout(()=>{
-      $('#preload').css('background-image','URL(./static_assets/static_background.png)')
-    },14000)
-  }
 </script>
 </body>
 </html>
