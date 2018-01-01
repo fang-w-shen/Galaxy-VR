@@ -254,9 +254,13 @@ h3:after {
   }
 
 }
-@media (min-width: 320px) {
+@media (min-width: 320px) and (orientation: portrait) {
   #preload {
     background-position-x: -107vw;
+  }
+}
+@media (min-width: 320px) {
+  #preload {
     width:102vw;
   }
   .modal_content1 {
