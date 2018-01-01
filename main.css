@@ -314,6 +314,11 @@ h3:after {
     left:48.5vw !important;
     top: 90vh !important;
   }
+  .modal_content1 {
+    margin-top: 19vh;
+    left: 34.5vw !important;
+    z-index:10;
+  }
 }
 
 
@@ -333,7 +338,7 @@ and (orientation : landscape) {
   }
   .modal_content1, .modal_box1:before, .modal_box1:after {
     margin-top:120px;
-    left: 24vw !important;
+    left: 26vw !important;
   }
 }
 @media only screen
@@ -347,7 +352,7 @@ and (orientation : portrait) {
     display: none;
   }
   .modal_content1, .modal_box1:before, .modal_box1:after {
-    margin-top: 16px;
+    margin-top: 1px !important;
     left: 18vw !important;
   }
   .main-background {
