@@ -4,8 +4,6 @@
   <style>body { margin: 0; overflow: none !important;}</style>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="preload" as="image" href="./static_assets/background.webp" media="(min-width: 600px)">
-  <link rel="preload" as="image" href="./static_assets/static_background.png" media="(min-width: 600px)">
-  <link rel="preload" as="image" href="./static_assets/nebula.jpg">
   <link rel="stylesheet" type="text/css" href="./main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./rockets.ico">
   <!-- <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script> -->
@@ -178,29 +176,7 @@
     },
 
     );
-  setTimeout(function(){
-      // $('canvas').parent().attr('style','position:fixed !important ;"top:0 !important')
 
-      setTimeout(function(){
-
-        // preloadProgressElem.remove()
-        $('#preload-count').attr('style',"position: absolute; left: 50%; top: 47%; color: white; box-sizing: border-box; display: block; width: 150px; z-index: 9; text-align: center; margin-left: -75px; font: 'Lato', cursive; font-size:26px;font-weight:bolder; border: 3px solid white; padding: 10px 20px; background: linear-gradient(45deg, #30777f, rgba(24, 36, 209, .2)); border-radius: 1px; overflow:hidden;")
-        $('#preload-count').html("Enter")
-        var initElem = document.getElementById('preload-count');
-
-        initElem.addEventListener("click",()=>{
-          $('.main-background').css('opacity',1);
-          $(preloadElem).addClass('close');
-          $(preloadElem).css('position','absolute');
-          setTimeout(()=>{
-            $(preloadElem).css('z-index','-999');
-
-          },500)
-
-          initElem.remove();
-        })
-      }, 1000);
-    }, 1000);
 
 }
 
