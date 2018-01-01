@@ -310,7 +310,7 @@ h3:after {
 @media (min-width: 808px) {
   .main-background {
     width: 108vw !important;
-    margin-left: -59px !important;
+    margin-left: -10vw !important;
     margin-top: 20px !important;
   }
   a[title='Full Screen'] + div {
