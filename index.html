@@ -27,24 +27,18 @@
     </div>
   </div>
   <div class = "modal_box modal_box1" style="z-index:10">
-    <div class="modal_content modal_content1" style="background: rgba(0,0,0,.5);color:white;">
+    <div class="modal_content modal_content1" style="background: rgba(0,0,0,0);color:white;">
 
       <video width="500px" height="500px" src type="video/mp4" id="gif" loop autoplay preload style="opacity:.78">
       </video>
 
 
-      <div class="modal_body">
-        <div id="modalbody3"></div>
-        <div id="modalbody4"></div>
-      </div>
-      <div class="modal_footer">
-        <a href = "#" id="modalclose" class ="close" href="">Back</a>
-      </div>
+
     </div>
   </div>
-  <div class="main-background" style="position:absolute;pointer-events: none;z-index:8;opacity:0;">
+  <div class="main-background" style="position:absolute;pointer-events: none;z-index:8;opacity:0;overflow:hidden;">
 
-    <img class="img-size" src="./static_assets/test.png" />
+    <img class="img-size" src="./static_assets/test.png" style="overflow:hidden" />
 
 
   </div>
@@ -78,7 +72,7 @@
 
 <script>
 
-  if ($(window).width() > 800) {
+  if ($(window).width() > 1024) {
     setTimeout(()=>{
       $('#preload').css('background-image','URL(./static_assets/static_background.png)')
     },14000)
