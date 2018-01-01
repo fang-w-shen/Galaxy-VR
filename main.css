@@ -249,6 +249,7 @@ h3:after {
   }
 
 }
+
 @media (min-width: 320px) and (orientation: portrait) {
   #preload {
     background-position-x: -98vw;
@@ -270,7 +271,7 @@ h3:after {
   }
   .main-background {
     width: 134vw !important;
-    margin-left:-76px !important;
+    margin-left:-19vw !important;
     margin-top:-20px;
   }
   a[title='Full Screen'] + div {
@@ -311,7 +312,7 @@ h3:after {
   a[title='Full Screen'] + div {
     position: absolute;
     z-index: 9;
-    left:48.5vw !important;
+    left:48.8vw !important;
     top: 90vh !important;
   }
   .modal_content1 {
@@ -320,7 +321,11 @@ h3:after {
     z-index:10;
   }
 }
-
+@media (max-width: 568px) and (orientation: landscape){
+  a[title='Full Screen'] + div {
+    left: 48vw !important;
+  }
+}
 
 /*IPAD MEDIA QUERIES*/
 @media only screen
@@ -356,7 +361,7 @@ and (orientation : portrait) {
     left: 18vw !important;
   }
   .main-background {
-    width: 115vw !important;
+    width: 130vw !important;
   }
   a[title='Full Screen'] + div {
     left:48vw !important;
@@ -373,7 +378,8 @@ and (orientation : portrait) {
   min-width:100%;
   min-height:100%;
   width: 100vw;
-  height:100vh;
+  height:106vh;
+  overflow:none;
   margin:0;
   padding:0;
   border:0;
@@ -419,3 +425,6 @@ and (orientation : portrait) {
   height:auto;
 }
 
+* {
+  overflow:none !important;
+}
