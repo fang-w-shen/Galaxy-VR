@@ -256,7 +256,7 @@ h3:after {
 }
 @media (min-width: 320px) and (orientation: portrait) {
   #preload {
-    background-position-x: -107vw;
+    background-position-x: -105vw;
   }
 }
 @media (min-width: 320px) {
