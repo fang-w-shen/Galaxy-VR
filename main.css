@@ -157,7 +157,12 @@
 
   color:white !important;
 }
-
+.gases {
+  position: absolute;
+  top: 0;
+  right: -1em;
+  text-align: right;
+}
 /*END MODAL*/
 
 
@@ -243,23 +248,39 @@ h3:after {
   }
   #gif {
     position: absolute;
-    left: -17vh;
-    width: 110vw !important;
-    height: 100vh !important;
+    left: -24vh;
+    margin-top: 42px;
   }
 
 }
-
+/* iphone 5 */
 @media (min-width: 320px) and (orientation: portrait) {
   #preload {
     background-position-x: -98vw;
   }
+  .gases {
+    top: 17vh;
+    right: -9.5em;
+  }
+  #gif{
+    left: -15vh;
+    max-width: 100vw;
+  }
 }
 @media (max-width: 568px) and (orientation: landscape) {
   #gif {
-    left: -53.5vh !important;
-   top: 9vh !important;
- }
+    left: -34.5vh !important;
+    margin-top: 33px;
+    max-height: 100vh;
+  }
+  .gases{
+    top: 9.5vh;
+    font-size: .8rem;
+    right: -8.7em;
+    p {
+      margin-top: .5em;
+    }
+  }
 }
 @media (min-width: 320px) {
   #preload {
@@ -286,12 +307,27 @@ h3:after {
     top:84vh !important;
   }
 }
+
+/* iphone 6+*/
+@media (min-width: 375px) and (orientation: portrait){
+  .gases {
+    top: 10vh;
+    right: -10.5em;
+  }
+}
 @media (min-width: 640px) and (orientation: landscape){
   #gif {
     left: -56vh !important;
     top: 39px !important;
+    left: -24vh !important;
+    max-height:100vh;
+    margin-top:0;
   }
-
+  .gases {
+    top: 11vh;
+    font-size: 0.8rem;
+    right: -8.7em;
+  }
   .main-background {
     width: 111vw !important;
     margin-left: -53px !important;
@@ -351,6 +387,11 @@ and (orientation : landscape) {
     margin-top:120px;
     left: 26vw !important;
   }
+  .gases {
+    top: 0.5vh;
+    font-size: 0.9rem;
+    right: -11.5em;
+  }
 }
 @media only screen
 and (min-device-width : 768px)
@@ -372,11 +413,28 @@ and (orientation : portrait) {
   a[title='Full Screen'] + div {
     left:48vw !important;
   }
+  #gif {
+    left: 0vh;
+    top: 11vh;
+  }
+  .gases {
+    top: 15vh;
+    right: -14.5em;
+  }
 
 }
 
 /*END IPAD MEDIA QUERIES*/
 
+/* laptop media query*/
+@media only screen
+and (min-device-width : 1025px) {
+  .gases {
+    top: 0.1vh;
+    font-size: 1rem;
+    right: -0.5em;
+  }
+}
 /*END MEDIA M QUERIES*/
 
 
@@ -423,8 +481,19 @@ and (orientation : portrait) {
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
-
+#preload {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
 .img-size {
   display:block;
   width:100%;

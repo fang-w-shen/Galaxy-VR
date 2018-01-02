@@ -33,7 +33,7 @@
 
       <video width="500px" height="500px" src type="video/mp4" id="gif" loop autoplay preload style="opacity:.78">
       </video>
-
+      <div class="gases"><h4 style="color:gold;">Major Gases</h4><hr style="margin-top: -17px;margin-bottom: -15px;"><div id="gases"></div></div>
 
 
     </div>
@@ -181,13 +181,34 @@
 
 </script>
 <script type="text/javascript">
+  $(document).ready(function(){
+    $(this).scrollTop(0);
+  });
   $('.modal_box').on("click",()=>{
     $(".modal_box").removeClass('close');
 
     $(".modal_box").removeClass('active');
     $(".modal_box").addClass('close');
   })
+  window.onload = function () {
+    setTimeout(function(){
+      $('#preload-count').attr('style',"position: absolute; left: 50%; top: 47%; color: white; box-sizing: border-box; display: block; width: 150px; z-index: 9; text-align: center; margin-left: -75px; font: 'Lato', cursive; font-size:26px;font-weight:bolder; border: 3px solid white; padding: 10px 20px; background: linear-gradient(45deg, #30777f, rgba(24, 36, 209, .2)); border-radius: 1px; overflow:hidden;")
+      $('#preload-count').html("Enter")
+      var initElem = document.getElementById('preload-count');
 
+      initElem.addEventListener("click",()=>{
+        $('.main-background').css('opacity',1);
+        $(preloadElem).addClass('close');
+        $(preloadElem).css('position','absolute');
+        setTimeout(()=>{
+          $(preloadElem).css('z-index','-999');
+
+        },500)
+
+        initElem.remove();
+      })
+    }, 6500);
+  }
 </script>
 </body>
 </html>

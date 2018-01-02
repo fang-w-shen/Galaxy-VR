@@ -29,7 +29,7 @@ export default class Button extends React.Component {
     this.interval = function(e) {
       interval = setInterval(()=>{
         e();
-      },100)
+      },10)
       this.state.truth = false;
 
     }
@@ -53,7 +53,6 @@ export default class Button extends React.Component {
       onButtonRelease={() => {
         clearInterval(interval)
         this.state.truth = true;
-
       }}
       onEnter={() => this.setState({color: 'rgba(255,255,255,.6)'})}
       onExit={() => this.setState({color: 'rgba(255,255,255,.1)'})}>
