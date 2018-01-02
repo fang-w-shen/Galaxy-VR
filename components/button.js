@@ -29,7 +29,7 @@ export default class Button extends React.Component {
     this.interval = function(e) {
       interval = setInterval(()=>{
         e();
-      },10)
+      },40)
       this.state.truth = false;
 
     }
