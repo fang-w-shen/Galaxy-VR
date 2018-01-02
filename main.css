@@ -127,7 +127,12 @@
   transform:none;
   -webkit-transform:none;
 }
-
+.active {
+  transition:all .4s linear;
+  -webkit-transition:all .4s linear;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 .modal_box.active {
   opacity: 1;
   visibility: visible;
@@ -162,6 +167,8 @@
   top: 0;
   right: -1em;
   text-align: right;
+  opacity: 0;
+  visibility: hidden;
 }
 /*END MODAL*/
 
@@ -324,7 +331,7 @@ h3:after {
     margin-top:0;
   }
   .gases {
-    top: 11vh;
+    top: 10.4vh;
     font-size: 0.8rem;
     right: -8.7em;
   }
