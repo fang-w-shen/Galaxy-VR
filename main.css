@@ -258,7 +258,7 @@ h3:after {
 @media (max-width: 568px) and (orientation: landscape) {
   #gif {
     left: -53.5vh !important;
-   top: 10vh !important;
+   top: 9vh !important;
  }
 }
 @media (min-width: 320px) {
