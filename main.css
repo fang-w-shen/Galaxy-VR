@@ -255,6 +255,12 @@ h3:after {
     background-position-x: -98vw;
   }
 }
+@media (max-width: 568px) and (orientation: landscape) {
+  #gif {
+    left: -53.5vh !important;
+   top: 10vh !important;
+ }
+}
 @media (min-width: 320px) {
   #preload {
     width:102vw;
