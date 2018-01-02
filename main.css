@@ -276,7 +276,7 @@ h3:after {
   }
   a[title='Full Screen'] + div {
     z-index: 9;
-    left:43vw !important;
+    left:44.5vw !important;
     top:84vh !important;
   }
 }
