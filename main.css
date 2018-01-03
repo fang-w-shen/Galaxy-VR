@@ -333,7 +333,7 @@ h3:after {
   .gases {
     top: 10.4vh;
     font-size: 0.8rem;
-    right: -8.7em;
+    right: -9em;
   }
   .main-background {
     width: 111vw !important;
@@ -351,7 +351,13 @@ h3:after {
     z-index: 9;
   }
 }
-
+@media (max-width: 667px) and (orientation: landscape){
+  .gases {
+    top: 10.4vh;
+    font-size: 0.8rem;
+    right: -9.9em !important;
+  }
+}
 @media (min-width: 808px) {
   .main-background {
     width: 111vw !important;
