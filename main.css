@@ -87,8 +87,8 @@
   border-radius:4px;
   position: relative;
   z-index:1;
-  transition:all .8s linear;
-  -webkit-transition:all .8s linear;
+  transition:all .4s linear;
+  -webkit-transition:all .4s linear;
   transform:translateY(-20%);
   -webkit-transform:translateY(-20%);
   opacity: 0;
@@ -353,9 +353,9 @@ h3:after {
 }
 @media (max-width: 667px) and (orientation: landscape){
   .gases {
-    top: 10.4vh;
+    top: 9.1vh;
     font-size: 0.8rem;
-    right: -9.9em !important;
+    right: -8.6em !important;
   }
 }
 @media (min-width: 808px) {
