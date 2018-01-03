@@ -459,7 +459,7 @@ and (min-device-width : 1025px) {
   .gases {
     top: 0.1vh !important;
     font-size: 1rem;
-    right: -0.5em;
+    right: -0.5em !important;
   }
 }
 /*END MEDIA M QUERIES*/
