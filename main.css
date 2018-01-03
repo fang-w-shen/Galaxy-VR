@@ -335,9 +335,9 @@ h3:after {
     margin-top:0;
   }
   .gases {
-    top: 11.3vh !important;
+    top: 11vh !important;
     font-size: 0.8rem;
-    right: -10em;
+    right: -10.5em;
   }
   .main-background {
     width: 111vw !important;
@@ -414,7 +414,7 @@ and (orientation : landscape) {
     left: 26vw !important;
   }
   .gases {
-    top: 0.5vh;
+    top: 0.5vh !important;
     font-size: 0.9rem;
     right: -11.5em;
   }
@@ -456,7 +456,7 @@ and (orientation : portrait) {
 @media only screen
 and (min-device-width : 1025px) {
   .gases {
-    top: 0.1vh;
+    top: 0.1vh !important;
     font-size: 1rem;
     right: -0.5em;
   }
