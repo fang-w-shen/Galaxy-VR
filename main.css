@@ -337,7 +337,8 @@ h3:after {
   .gases {
     top: 11vh !important;
     font-size: 0.8rem;
-    right: -11.5em !important;
+    right: -11.5em !important;]
+    margin-right:-20px;
   }
   .main-background {
     width: 111vw !important;
