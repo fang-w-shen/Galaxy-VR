@@ -324,7 +324,7 @@ h3:after {
   }
   #gif {
     top: -6px;
-    left:-14.7vh;
+    left:-15.1vh;
   }
 }
 @media (min-width: 640px) and (orientation: landscape){
@@ -335,7 +335,7 @@ h3:after {
     margin-top:0;
   }
   .gases {
-    top: 11.3vh;
+    top: 11.3vh !important;
     font-size: 0.8rem;
     right: -10em;
   }
