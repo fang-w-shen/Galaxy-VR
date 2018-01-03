@@ -270,7 +270,7 @@ h3:after {
     right: -9.5em;
   }
   #gif{
-    left: -16vh;
+    left: -15.7vh;
     max-width: 100vw;
     top: -36px;
   }
@@ -282,7 +282,7 @@ h3:after {
     max-height: 100vh;
   }
   .gases{
-    top: 8.5vh;
+    top: 8.5vh !important;
     font-size: .8rem;
     right: -8.7em;
     p {
@@ -324,6 +324,7 @@ h3:after {
   }
   #gif {
     top: -6px;
+    left:-14.7vh;
   }
 }
 @media (min-width: 640px) and (orientation: landscape){
@@ -334,7 +335,7 @@ h3:after {
     margin-top:0;
   }
   .gases {
-    top: 11vh;
+    top: 11.3vh;
     font-size: 0.8rem;
     right: -10em;
   }
