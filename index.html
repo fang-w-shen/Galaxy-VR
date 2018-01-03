@@ -2,8 +2,9 @@
 <head>
   <title>Galaxy-VR</title>
   <style>body { margin: 0; overflow: none !important;}</style>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="preload" as="image" href="./static_assets/background.webp" media="(min-width: 600px)">
   <link rel="preload" as="image" href="./static_assets/static_background.png" media="(min-width: 800px)">
   <link rel="stylesheet" type="text/css" href="./main.css">
@@ -12,7 +13,7 @@
     document.ontouchmove = function(e){ e.preventDefault(); }
   </script>
 </head>
-<body style=" overflow:hidden;">
+<body style=" overflow:hidden;" onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 
   <!-- <div class = "modal_box modal_box2">
     <div class="modal_content" style="background: rgba(0,0,0,.5);color:white">
