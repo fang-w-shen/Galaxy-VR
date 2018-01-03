@@ -266,12 +266,13 @@ h3:after {
     background-position-x: -98vw;
   }
   .gases {
-    top: 17vh;
+    top: 10.3vh;
     right: -9.5em;
   }
   #gif{
     left: -15.5vh;
     max-width: 100vw;
+    top: -36px;
   }
 }
 @media (max-width: 568px) and (orientation: landscape) {
@@ -324,16 +325,15 @@ h3:after {
 }
 @media (min-width: 640px) and (orientation: landscape){
   #gif {
-    left: -56vh !important;
     top: 39px !important;
     left: -24vh !important;
     max-height:100vh;
     margin-top:0;
   }
   .gases {
-    top: 10.4vh;
+    top: 10.8vh;
     font-size: 0.8rem;
-    right: -9.1em;
+    right: -9.6em;
   }
   .main-background {
     width: 111vw !important;
