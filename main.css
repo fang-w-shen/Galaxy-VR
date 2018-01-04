@@ -525,9 +525,10 @@ and (min-device-width : 1025px) {
 
 * {
   overflow:none !important;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
+  -webkit-touch-callout: none !important; /* iOS Safari */
+  -webkit-user-select: none !important; /* Safari */
+  -khtml-user-select: none !important; /* Konqueror HTML */
+  -moz-user-select: none !important; /* Firefox */
+  -ms-user-select: none !important; /* Internet Explorer/Edge */
+  user-select: none !important; /* Non-prefixed version, currentlysupported by Chrome and Opera */
 }
