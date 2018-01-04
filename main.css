@@ -48,11 +48,6 @@
   z-index:1;
   opacity: 0;
   visibility: hidden;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
 }
 
 .modal_box:after {
@@ -534,4 +529,9 @@ and (min-device-width : 1025px) {
 
 * {
   overflow:none !important;
+  user-select: none !important;
+  -moz-user-select: none !important;
+  -khtml-user-select: none !important;
+  -webkit-user-select: none !important;
+  -o-user-select: none !important;
 }
