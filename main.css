@@ -48,6 +48,11 @@
   z-index:1;
   opacity: 0;
   visibility: hidden;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .modal_box:after {
@@ -508,7 +513,11 @@ and (min-device-width : 1025px) {
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
-
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 #preload {
   user-select: none;
@@ -525,10 +534,4 @@ and (min-device-width : 1025px) {
 
 * {
   overflow:none !important;
-  -webkit-touch-callout: none !important; /* iOS Safari */
-  -webkit-user-select: none !important; /* Safari */
-  -khtml-user-select: none !important; /* Konqueror HTML */
-  -moz-user-select: none !important; /* Firefox */
-  -ms-user-select: none !important; /* Internet Explorer/Edge */
-  user-select: none !important; /* Non-prefixed version, currentlysupported by Chrome and Opera */
 }

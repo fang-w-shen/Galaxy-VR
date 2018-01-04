@@ -9,24 +9,12 @@
   <link rel="preload" as="image" href="./static_assets/static_background.png" media="(min-width: 800px)">
   <link rel="stylesheet" type="text/css" href="./main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./rockets.ico">
+  <script>
+    document.ontouchmove = function(e){ e.preventDefault(); }
+  </script>
 </head>
 <body style=" overflow:hidden;" onload="setTimeout(function() { window.scrollTo(0, 0) }, 100);">
 
-  <!-- <div class = "modal_box modal_box2">
-    <div class="modal_content" style="background: rgba(0,0,0,.5);color:white">
-      <div class="modal_header" id="modalheader" >
-        Modal Header
-      </div>
-
-      <div class="modal_body">
-        <div id="modalbody1"></div>
-        <div id="modalbody2"></div>
-      </div>
-      <div class="modal_footer">
-        <a href = "#" id="modalclose" class ="close" href="">Back</a>
-      </div>
-    </div>
-  </div> -->
   <div class = "modal_box modal_box1" style="z-index:10">
     <div class="modal_content modal_content1" style="background: rgba(0,0,0,0);color:white;">
 
