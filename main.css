@@ -132,6 +132,7 @@
   -webkit-transition:all .4s linear;
   opacity: 1 !important;
   visibility: visible !important;
+  z-index:11 !important;
 }
 .modal_box.active {
   opacity: 1;
@@ -174,6 +175,7 @@
   -khtml-user-select: none !important;
   -webkit-user-select: none !important;
   -o-user-select: none !important;
+  z-index: -1;
 }
 /*END MODAL*/
 
@@ -329,7 +331,7 @@ h3:after {
   }
   #gif {
     top: -6px;
-    left:-15.5vh;
+    left:-15.3vh;
   }
 }
 @media (min-width: 640px) and (orientation: landscape){
