@@ -508,11 +508,7 @@ and (min-device-width : 1025px) {
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
+
 }
 #preload {
   user-select: none;
@@ -529,4 +525,9 @@ and (min-device-width : 1025px) {
 
 * {
   overflow:none !important;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
