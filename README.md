@@ -12,6 +12,7 @@ Galaxy-VR is a Virtual and Interactive Virtual Tour of the Solar System with 3D 
 ## Usage
 
 W,A,S,D keys on the keyboard can be used to navigate the virtual galaxy on desktop.
+
 There is also a virtual control panel that is available for all desktop and mobile access.
 
 ## Technologies Used
