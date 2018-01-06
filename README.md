@@ -7,15 +7,20 @@ Galaxy-VR is a Virtual and Interactive Virtual Tour of the Solar System with 3D 
 [![PREVIEW](https://github.com/fang-w-shen/Galaxy-VR/blob/master/static_assets/preview.png)](https://galaxy-vr.herokuapp.com/)
 
 
-**[BLAST OFF!](https://galaxy-vr.herokuapp.com/)**
+**[Blast Off to Tour the Galaxy!](https://galaxy-vr.herokuapp.com/)**
+
+## Usage
+
+W,A,S,D keys on the keyboard can be used to navigate the virtual galaxy on desktop.
+There is also a virtual control panel that is available for all desktop and mobile access.
 
 ## Technologies Used
 
 React-VR
 
-JSX/JQuery
+CSS
 
-SASS
+JSX/JQuery
 
 Blender
 
@@ -27,5 +32,20 @@ Galaxcyclopedia-API JSON Data Visualization
 
 Heroku
 
+## Cloning Source Code
+
+To get started with the app, clone the repo and then change directories into the newly created Galaxy-VR directory:
+
+```
+$ git clone https://github.com/fang-w-shen/Galaxy-VR.git
+$ cd Galaxy-VR
+```
+
+Navigate to localhost:8080 and Blast Off!:
+
+```
+$ http-server
+```
+
 ## Copyright and License
-Copyright 2017 under [Fang-W-Shen](https://github.com/fang-w-shen).
+Copyright 2018 under [Fang-W-Shen](https://github.com/fang-w-shen).
