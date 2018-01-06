@@ -1,4 +1,4 @@
-# [Galaxy-VR](https://galaxy-vr.herokuapp.com/)
+# Galaxy-VR
 
 Galaxy-VR is a Virtual and Interactive Virtual Tour of the Solar System with 3D Modeling and Animations, Educational Data Presentation, and Virtual Representation of the Solar System and its Planets Rendered in React-VR.
 
@@ -9,15 +9,22 @@ Galaxy-VR is a Virtual and Interactive Virtual Tour of the Solar System with 3D 
 
 **[BLAST OFF!](https://galaxy-vr.herokuapp.com/)**
 
-## Technologies
+## Technologies Used
 
 React-VR
+
 JSX/JQuery
+
 SASS
+
 Blender
+
 Spacescape
+
 3D-Modeling
+
 Galaxcyclopedia-API JSON Data Visualization
+
 Heroku
 
 ## Copyright and License
